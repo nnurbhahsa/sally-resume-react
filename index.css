@@ -1,0 +1,16 @@
+h1{
+    text-align:center; 
+}
+
+h3{
+    padding: 0px;
+    margin: 0px;
+}
+
+* {
+    background-color: lightpink;
+}
+
+p {
+    text-align: center;
+}

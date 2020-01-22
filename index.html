@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Sally Student Resume w/React</title>
+</head>
+
+<body>
+    <div id="content"></div>
+
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+
+
+    <script type="text/babel">
+        function App(props) {
+            console.log(props);
+            return (
+                <main>
+                    <header role="banner">
+                        <h1>Sally Student</h1>
+                    </header>
+
+                    <section>
+                        <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="Sally's Profile Pic"></img>
+                        <h5>Email: <a href="mailto:sally.student@gmail.com">sally.student@gmail.com</a></h5>
+                        <h5>Phone: <a href="tel:123-456-7890">123-456-7890</a></h5>
+                        <hr></hr>
+                    </section>
+
+                    <section>
+                        <h2>Education</h2>
+                        <ul>
+                            <li>
+                                <strong>Bachelor of Arts in Computer Science</strong><br></br><em>University of Wisconsin-Madison (2015-2019)</em>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Work Experience</h2>
+                        <h3>Software Engineer</h3>
+                        <em>Facebook (2019 - present)</em>
+                        <ul>
+                            <li>Used Java to create applications.</li>
+                        </ul>
+                        <h3>Web Developer</h3>
+                        <em>Netflix (2018 - 2019)</em>
+                        <ul>
+                            <li>Used react to work on front-end projects.</li>
+                        </ul>
+                    </section>
+
+                    <address>
+                        <p>Produced by: <a href="mailto:sally.student@gmail.com">Sally</a></p>
+                    </address>
+                </main>
+            );
+        };
+
+        ReactDOM.render(
+            <App />,
+            document.querySelector('#content')
+        );
+    </script>
+</body>
+
+</html>
